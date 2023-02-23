@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     // sidenav initialization
-    let sidenav = document.querySelectorAll(".sidenav");
+    var sidenav = document.querySelectorAll(".sidenav");
     M.Sidenav.init(sidenav);
+
+    var elems = document.querySelectorAll('.modal');
+    M.Modal.init(elems);
 
     // datepicker initialization
     var datepicker = document.querySelectorAll('.datepicker');
@@ -13,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // select initialization
-    let selects = document.querySelectorAll("select");
+    var selects = document.querySelectorAll("select");
     M.FormSelect.init(selects);
 
     // display tasks
